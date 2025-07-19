@@ -67,7 +67,6 @@ const TripDetails = () => {
           className="h-[340px] w-full object-cover rounded-xl"
         />
 
-        {/* Trip Header Info */}
         <div className="flex justify-between items-center">
           <div className="my-5 flex flex-col gap-2">
             <h2 className="font-bold text-2xl">
@@ -86,7 +85,6 @@ const TripDetails = () => {
             </div>
           </div>
 
-          {/* Action Button */}
           <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2">
             <svg
               stroke="currentColor"
@@ -103,7 +101,6 @@ const TripDetails = () => {
         </div>
       </motion.div>
 
-      {/* Hotel Recommendation */}
       <motion.div variants={itemVariant}>
         <h2 className="font-bold text-xl mt-5">Hotel Recommendation</h2>
         <motion.div
@@ -118,7 +115,6 @@ const TripDetails = () => {
         </motion.div>
       </motion.div>
 
-      {/* Places to Visit */}
       <motion.div variants={itemVariant}>
         <h2 className="font-bold text-lg">Places to Visit</h2>
         <motion.div variants={containerVariant}>

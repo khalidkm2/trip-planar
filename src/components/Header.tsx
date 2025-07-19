@@ -14,7 +14,7 @@ const Header = () => {
         <img src={logo} alt="Logo" className="h-8 sm:h-10" />
         <span className="text-xl sm:text-2xl font-bold text-gray-800 ">
           Plan<span className="text-blue-500">Go</span>{" "}
-          <span className=" font-medium text-gray-500">AI</span>
+          <span className="  text-gray-500 font-medium">AI</span>
         </span>
       </Link>
 
