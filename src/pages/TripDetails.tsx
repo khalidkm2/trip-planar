@@ -2,7 +2,7 @@ import DayCard from "@/components/DayCard";
 import HotelCard from "@/components/HotelCard";
 import { TripContext } from "@/lib/context";
 import { getImageFromUnsplash } from "@/lib/unsplashImage";
-import React, { useContext, useEffect, useState } from "react";
+import  { useContext, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router";
 
@@ -20,7 +20,7 @@ const itemVariant = {
 };
 
 const TripDetails = () => {
-  const { aiTrip } = useContext(TripContext);
+  const { aiTrip }:any = useContext(TripContext);
   const [titleUrl, setTitleUrl] = useState("");
   const navigate = useNavigate();
 
@@ -107,7 +107,7 @@ const TripDetails = () => {
           className="grid grid-cols-2 my-5 md:grid-cols-3 xl:grid-cols-4 gap-5"
           variants={containerVariant}
         >
-          {jsonData?.hotel_recommendations.map((data) => (
+          {jsonData?.hotel_recommendations.map((data:any) => (
             <motion.div key={data.name} variants={itemVariant}>
               <HotelCard data={data} />
             </motion.div>
@@ -118,7 +118,7 @@ const TripDetails = () => {
       <motion.div variants={itemVariant}>
         <h2 className="font-bold text-lg">Places to Visit</h2>
         <motion.div variants={containerVariant}>
-          {jsonData?.daily_plan.map((data, index) => (
+          {jsonData?.daily_plan.map((data:any, index:any) => (
             <motion.div key={index} variants={itemVariant}>
               <DayCard data={data} />
             </motion.div>

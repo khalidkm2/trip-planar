@@ -3,7 +3,7 @@ import { Input } from "@/components/ui/input";
 import { budgetOptions, travelCompanions } from "@/lib/constants";
 import { TripContext } from "@/lib/context";
 import { createTripAi } from "@/lib/geminiCreation";
-import React, { useContext, useState } from "react";
+import  { useContext, useState } from "react";
 import ReactGoogleAutocomplete from "react-google-autocomplete";
 import { useNavigate } from "react-router";
 import { Loader2Icon } from "lucide-react";
@@ -16,14 +16,15 @@ const CreateTrip = () => {
   const [selectedBudget, setSelectedBudget] = useState(null);
   const [selectedTravelCompanions, setSelectedTravelCompanions] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-  const { aiTrip, setAiTrip } = useContext(TripContext);
+  const { aiTrip, setAiTrip }:any = useContext(TripContext);
   const navigate = useNavigate();
 
-  const handleBudget = (data) => {
+  const handleBudget = (data:any) => {
     setSelectedBudget(data.title);
+    console.log(aiTrip)
   };
 
-  const handleTravelCompanions = (data) => {
+  const handleTravelCompanions = (data:any) => {
     setSelectedTravelCompanions(data.title);
   };
 

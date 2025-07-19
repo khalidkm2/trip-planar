@@ -1,7 +1,7 @@
 import { useUnsplashImage } from '@/lib/useUnsplashImage';
 import React from 'react'
 
-const TimeCard = ({timeData}) => {
+const TimeCard = ({timeData}:any) => {
     const {title,description,duration,cost,time} = timeData
       const { image, loading } = useUnsplashImage(title);
     
