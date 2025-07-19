@@ -51,7 +51,7 @@ const TripDetails = () => {
       setTitleUrl(url);
     };
     getImage();
-  }, [aiTrip]);
+  }, [aiTrip, jsonData?.overview?.title_image_keyword]);
 
   return (
     <motion.div

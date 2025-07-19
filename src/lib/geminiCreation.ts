@@ -5,7 +5,7 @@ const ai = new GoogleGenAI({
   apiKey: "AIzaSyABHDpF1jGGueIL9uq3D3FS251EIgVk2mg",
 });
 
-export async function createTripAi(tripData) {
+export async function createTripAi(tripData:any) {
   try {
     const completedPromt = tripCreationPromt
       .replace("{location}", tripData.location)

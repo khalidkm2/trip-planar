@@ -1,10 +1,11 @@
-import React, { createContext, useState } from "react";
+import  { createContext, useState } from "react";
 
 // Step 1: Create context
-export const TripContext = createContext();
+// eslint-disable-next-line react-refresh/only-export-components
+export const TripContext = createContext({});
 
 // Step 2: Create Provider
-export const TripProvider = ({ children }) => {
+export const TripProvider = ({ children }:any) => {
   const [aiTrip, setAiTrip] = useState(null);
 
   // const toggleTheme = () => {

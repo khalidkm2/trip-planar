@@ -1,9 +1,9 @@
 import { useUnsplashImage } from '@/lib/useUnsplashImage';
-import React from 'react'
+// import React from 'react'
 
 const TimeCard = ({timeData}:any) => {
-    const {title,description,duration,cost,time} = timeData
-      const { image, loading } = useUnsplashImage(title);
+    const {title,description,duration,cost} = timeData
+      const { image } = useUnsplashImage(title);
     
   return (
    <div className="border rounded-xl p-3 mt-2 flex gap-5 hover:scale-105 transition-all hover:shadow-md cursor-pointer h-[180px]">

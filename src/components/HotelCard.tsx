@@ -1,10 +1,10 @@
 import { useUnsplashImage } from '@/lib/useUnsplashImage';
-import React from 'react';
+// import React from 'react';
 // import { useUnsplashImage } from '@/hooks/useUnsplashImage';
 
  const HotelCard = ({ data }:any) => {
   const { name, address, price_per_night, stars } = data;
-  const { image: hotelImage, loading } = useUnsplashImage(name);
+  const { image: hotelImage } = useUnsplashImage(name);
 
   return (
     <div>

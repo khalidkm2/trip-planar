@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import TimeCard from './TimeCard'
 
 const DayCard = ({data}:any) => {

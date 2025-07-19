@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import { getImageFromUnsplash } from '@/lib/unsplashImage';
 
-export const useUnsplashImage = (query) => {
+export const useUnsplashImage = (query:any) => {
   const [image, setImage] = useState('');
   const [loading, setLoading] = useState(true);
 
